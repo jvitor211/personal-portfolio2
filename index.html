@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Rondon | Offensive Security Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@400;600;800&family=Heebo:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body data-lang="pt">
+    <canvas id="matrix-canvas"></canvas>
+    <div class="scanline"></div>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button onclick="setLang('pt')" class="active">🇧🇷 PT</button>
+        <button onclick="setLang('en')">🇺🇸 EN</button>
+        <button onclick="setLang('es')">🇪🇸 ES</button>
+        <button onclick="setLang('he')">🇮🇱 HE</button>
+    </div>
+
+    <!-- PDF Button -->
+    <a href="cv_print.html" target="_blank" class="btn-pdf-floating" title="Print PDF">
+        <i data-lucide="printer"></i>
+    </a>
+
+    <header class="hero">
+        <div class="container">
+            <div class="terminal-badge">
+                <span class="blink">_</span> SYSTEM.ROOT.ACCESS
+            </div>
+
+            <h1 class="glitch-wrapper">
+                <span data-text="JOÃO RONDON">JOÃO RONDON</span>
+            </h1>
+
+            <!-- Dynamic Titles based on Lang -->
+            <h2 class="hero-title" data-lang-content="pt">ENGENHEIRO DE SEGURANÇA OFENSIVA</h2>
+            <h2 class="hero-title hidden" data-lang-content="en">OFFENSIVE SECURITY ENGINEER</h2>
+            <h2 class="hero-title hidden" data-lang-content="es">INGENIERO DE SEGURIDAD OFENSIVA</h2>
+            <h2 class="hero-title hidden" data-lang-content="he" dir="rtl">מהנדס אבטחה התקפית</h2>
+
+            <p class="hero-sub" data-lang-content="pt">Full Stack Developer | Offensive Security Researcher |
+                AI-Augmented Engineer</p>
+            <p class="hero-sub hidden" data-lang-content="en">Full Stack Developer | Offensive Security Researcher |
+                AI-Augmented Engineer</p>
+            <p class="hero-sub hidden" data-lang-content="es">Desarrollador Full Stack | Investigador de Seguridad
+                Ofensiva | Ingeniería IA</p>
+            <p class="hero-sub hidden" data-lang-content="he" dir="rtl">מפתח Full Stack | חוקר אבטחה התקפית | מהנדס
+                מועצם בינה מלאכותית</p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <i data-lucide="crosshair"></i> <span data-lang-content="pt">Ver Projetos</span>
+                    <span data-lang-content="en" class="hidden">View Projects</span>
+                    <span data-lang-content="es" class="hidden">Ver Proyectos</span>
+                    <span data-lang-content="he" class="hidden">פרויקטים</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i data-lucide="mail"></i> <span data-lang-content="pt">Contato Seguro</span>
+                    <span data-lang-content="en" class="hidden">Secure Contact</span>
+                    <span data-lang-content="es" class="hidden">Contacto Seguro</span>
+                    <span data-lang-content="he" class="hidden">צור קשר</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <i data-lucide="shield" class="icon-lg"></i>
+                <h3>0x01_PROFILE</h3>
+            </div>
+            <div class="card about-card glass-panel">
+                <div data-lang-content="pt">
+                    <p>Profissional híbrido operando na interseção entre <strong>Desenvolvimento Full Stack
+                            Corporativo</strong> e <strong>Pesquisa de Segurança Ofensiva</strong>. Especialista em
+                        criar arquiteturas resilientes e, simultaneamente, desenvolver capacidades táticas de C2
+                        (Command & Control) e Inteligência (OSINT).</p>
+                </div>
+                <div data-lang-content="en" class="hidden">
+                    <p>Hybrid professional operating at the intersection of <strong>Corporate Full Stack
+                            Development</strong> and <strong>Offensive Security Research</strong>. Specialist in
+                        building resilient architectures while simultaneously developing tactical C2 (Command & Control)
+                        and Intelligence (OSINT) capabilities.</p>
+                </div>
+                <div data-lang-content="es" class="hidden">
+                    <p>Profesional híbrido operando en la intersección entre <strong>Desarrollo Full Stack
+                            Corporativo</strong> e <strong>Investigación de Seguridad Ofensiva</strong>. Especialista en
+                        crear arquitecturas resilientes y desarrollar capacidades tácticas de C2.</p>
+                </div>
+                <div data-lang-content="he" class="hidden" dir="rtl">
+                    <p>איש מקצוע היברידי הפועל במפגש שבין <strong>פיתוח Full Stack ארגוני</strong> ו-<strong>מחקר אבטחה
+                            התקפית</strong>. מומחה בבניית ארכיטקטורות עמידות ובמקביל פיתוח יכולות טקטיות של שליטה ובקרה
+                        (C2) ומודיעין (OSINT).</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-tag">.NET Core</div>
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">Android Security</div>
+                    <div class="skill-tag">Malware Dev</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Azure</div>
+                    <div class="skill-tag">AI Engineering</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <i data-lucide="cpu" class="icon-lg"></i>
+                <h3>0x02_ARSENAL</h3>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Chimera -->
+                <article class="project-card featured" style="animation-delay: 0.1s">
+                    <div class="card-header">
+                        <h4>CHIMERA C2</h4>
+                        <span class="badge red">TOP SECRET</span>
+                    </div>
+                    <p class="project-desc" data-lang-content="pt">Plataforma avançada de Comando e Controle para
+                        operações de Red Team. Inclui dashboard tático em tempo real e implants nativos indetectáveis.
+                    </p>
+                    <p class="project-desc hidden" data-lang-content="en">Advanced Command and Control platform for Red
+                        Team operations. Includes real-time tactical dashboard and undetectable native implants.</p>
+                    <p class="project-desc hidden" data-lang-content="es">Plataforma avanzada de Comando y Control.
+                        Incluye panel táctico en tiempo real e implantes nativos indetectables.</p>
+                    <p class="project-desc hidden" data-lang-content="he" dir="rtl">פלטפורמת שליטה ובקרה מתקדמת למבצעי
+                        הצוות האדום. כולל לוח מחוונים טקטי בזמן אמת ושתלים מקומיים בלתי ניתנים לגילוי.</p>
+
+                    <ul class="project-specs">
+                        <li><i data-lucide="check"></i> Android & iOS Implants</li>
+                        <li><i data-lucide="check"></i> Stealth Communication</li>
+                        <li><i data-lucide="check"></i> Real-time Surveillance</li>
+                    </ul>
+                </article>
+
+                <!-- MossIT -->
+                <article class="project-card" style="animation-delay: 0.2s">
+                    <div class="card-header">
+                        <h4>MOSS.IT</h4>
+                        <span class="badge purple">INTEL</span>
+                    </div>
+                    <p class="project-desc" data-lang-content="pt">Suite de Inteligência e OSINT para rastreamento de
+                        ativos digitais e correlação de dados em investigações complexas.</p>
+                    <p class="project-desc hidden" data-lang-content="en">Intelligence and OSINT suite for digital asset
+                        tracking and data correlation in complex investigations.</p>
+                    <p class="project-desc hidden" data-lang-content="es">Suite de Inteligencia y OSINT para rastreo de
+                        activos digitales e investigaciones complejas.</p>
+                    <p class="project-desc hidden" data-lang-content="he" dir="rtl">חבילת מודיעין ו-OSINT למעקב אחר
+                        נכסים דיגיטליים וקורלציה של נתונים בחקירות מורכבות.</p>
+                </article>
+
+                <!-- Ghost Bridge -->
+                <article class="project-card" style="animation-delay: 0.3s">
+                    <div class="card-header">
+                        <h4>GHOST BRIDGE</h4>
+                        <span class="badge blue">COMMS</span>
+                    </div>
+                    <p class="project-desc" data-lang-content="pt">Canal de comunicação segura criptografada projetado
+                        para exfiltração de dados em ambientes hostis monitorados.</p>
+                    <p class="project-desc hidden" data-lang-content="en">Secure encrypted communication channel
+                        designed for data exfiltration in hostile monitored environments.</p>
+                    <p class="project-desc hidden" data-lang-content="es">Canal de comunicación segura encriptada
+                        diseñado para la exfiltración de datos.</p>
+                    <p class="project-desc hidden" data-lang-content="he" dir="rtl">ערוץ תקשורת מאובטח מוצפן המיועד
+                        להוצאת נתונים בסביבות מנוטרות עוינות.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <i data-lucide="briefcase" class="icon-lg"></i>
+                <h3>0x03_MISSIONS</h3>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h4>AMAGGI</h4>
+                        <h5>Full Stack Developer</h5>
+                        <div data-lang-content="pt">
+                            <p>Desenvolvimento de soluções críticas em .NET e React. Arquitetura de microsserviços em
+                                Azure.</p>
+                        </div>
+                        <div data-lang-content="en" class="hidden">
+                            <p>Critical solution development in .NET and React. Microservices architecture on Azure.</p>
+                        </div>
+                        <div data-lang-content="es" class="hidden">
+                            <p>Desarrollo de soluciones críticas en .NET y React. Arquitectura de microservicios en
+                                Azure.</p>
+                        </div>
+                        <div data-lang-content="he" class="hidden" dir="rtl">
+                            <p>פיתוח פתרונות קריטיים ב-.NET ו-React. ארכיטקטורת Microservices ב-Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2023</div>
+                    <div class="timeline-content">
+                        <h4>LANLINK</h4>
+                        <h5>Técnico de Suporte N2 / L2 Support</h5>
+                        <div data-lang-content="pt">
+                            <p>Gestão de incidentes globais e manutenção de infraestrutura crítica.</p>
+                        </div>
+                        <div data-lang-content="en" class="hidden">
+                            <p>Global incident management and critical infrastructure maintenance.</p>
+                        </div>
+                        <div data-lang-content="es" class="hidden">
+                            <p>Gestión de incidentes globales y mantenimiento de infraestructura crítica.</p>
+                        </div>
+                        <div data-lang-content="he" class="hidden" dir="rtl">
+                            <p>ניהול תקריות גלובלי ותחזוקת תשתית קריטית.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="contact-info">
+                <h3 data-lang-content="pt">INICIAR HANDSHAKE</h3>
+                <h3 data-lang-content="en" class="hidden">INITIATE HANDSHAKE</h3>
+                <h3 data-lang-content="es" class="hidden">INICIAR HANDSHAKE</h3>
+                <h3 data-lang-content="he" class="hidden" dir="rtl">יזום לחיצת יד</h3>
+
+                <p style="color: var(--text-muted);">jvbarbosa211@gmail.com</p>
+                <div style="margin-top: 10px;">
+                    <a href="mailto:jvbarbosa211@gmail.com" class="link-highlight">Email Encrypted Channel</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-rondon-3453001b1" target="_blank" title="LinkedIn"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="https://github.com/jvitor211" target="_blank" title="GitHub"><i data-lucide="github"></i></a>
+                <a href="cv_print.html" target="_blank" title="Download CV (PDF)"><i data-lucide="file-text"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 João Rondon. All Systems Operational.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Init Icons
+        lucide.createIcons();
+
+        // Matrix Effect
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        const drops = [];
+
+        for (let x = 0; x < columns; x++) drops[x] = 1;
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(10, 10, 12, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0F0'; // Cyber Green
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters.charAt(Math.floor(Math.random() * letters.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975)
+                    drops[i] = 0;
+
+                drops[i]++;
+            }
+        }
+        setInterval(drawMatrix, 33);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Language Switcher
+        function setLang(lang) {
+            document.body.setAttribute('data-lang', lang);
+
+            // Toggle Content
+            document.querySelectorAll('[data-lang-content]').forEach(el => {
+                if (el.getAttribute('data-lang-content') === lang) {
+                    el.classList.remove('hidden');
+                } else {
+                    el.classList.add('hidden');
+                }
+            });
+
+            // Toggle Buttons
+            document.querySelectorAll('.lang-switcher button').forEach(btn => {
+                if (btn.innerText.toLowerCase().includes(lang)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
