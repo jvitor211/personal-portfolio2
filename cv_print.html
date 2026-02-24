@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - João Rondon</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #333;
+            background: #fff;
+            max-width: 21cm;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .header {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header h1 {
+            font-size: 24pt;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-role {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 9pt;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding-bottom: 3px;
+            color: #000;
+        }
+
+        .experience-item,
+        .project-item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .item-role {
+            font-style: italic;
+            color: #444;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 10pt;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        /* Print Specifics */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                width: 100%;
+                margin: 0;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .btn-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="window.print()" class="btn-print no-print">🖨️ Save as PDF</button>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div>
+            <h1>João Rondon</h1>
+            <div class="header-role">Offensive Security Engineer & Full Stack Developer</div>
+        </div>
+        <div class="contact-info">
+            <div><a href="mailto:jvbarbosa211@gmail.com">jvbarbosa211@gmail.com</a></div>
+            <div>+55 65 99268-1781</div>
+            <div>Cuiabá, Mato Grosso, Brazil</div>
+            <div><a href="https://linkedin.com/in/joão-rondon-3453001b1">linkedin.com/in/joao-rondon</a></div>
+            <div><a href="https://github.com/jvitor211">github.com/jvitor211</a></div>
+        </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>
+            Hybrid Software Engineer blending robust corporate **.NET/React** expertise with advanced **Offensive
+            Security** research.
+            Pioneer in **AI-Augmented Engineering**, demonstrating the ability to build secure, high-stakes software
+            infrastructure
+            from kernel-level implants to cloud-native architectures.
+        </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <span>AMAGGI</span>
+                <span>2023 – Present</span>
+            </div>
+            <div class="item-role">Full Stack Developer</div>
+            <ul>
+                <li>Architecting enterprise-grade solutions using <strong>.NET Core</strong> and <strong>React</strong>.
+                </li>
+                <li>Designing robust APIs and microservices on <strong>Azure</strong>, ensuring high availability.</li>
+                <li>Championing AI-Assisted Development workflows to increase team velocity.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <span>LANLINK</span>
+                <span>Apr 2023 – Oct 2023</span>
+            </div>
+            <div class="item-role">L2 Technical Support Analyst</div>
+            <ul>
+                <li>Provided Tier-2 support for global infrastructure across 80 branches.</li>
+                <li>Maintained SAP/Citrix environments and executed critical hardware troubleshooting.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+        <div class="section-title">Advanced R&D Projects (Portfolio)</div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <span>CHIMERA C2 FRAMEWORK</span>
+                <span>Cyber Warfare Platform</span>
+            </div>
+            <ul>
+                <li>Cross-platform Command & Control (C2) system designed for Red Team operations.</li>
+                <li><strong>Tech Stack:</strong> Async Python Backend, WebSocket Real-time Dashboard, Native Mobile
+                    Implants (Android/iOS).</li>
+                <li>Developed self-destruct mechanisms and stealth communication channels bypassing modern EDR
+                    solutions.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <span>MOSS.IT</span>
+                <span>Threat Intelligence Platform</span>
+            </div>
+            <ul>
+                <li>Automated OSINT (Open Source Intelligence) aggregation tool for digital footprint analysis.</li>
+                <li>Focus on data correlation and identity tracking for defensive investigations.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <span>GHOST BRIDGE</span>
+                <span>Secure Comms</span>
+            </div>
+            <ul>
+                <li>Encrypted communication channel designed for data exfiltration in hostile environments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div>
+                <strong>Development:</strong> C# .NET Core, Python, React, JavaScript, C/C++
+            </div>
+            <div>
+                <strong>Security:</strong> Malware Dev, Reverse Engineering, C2 Design, OSINT
+            </div>
+            <div>
+                <strong>Cloud/Ops:</strong> Azure, Docker, CI/CD Pipelines
+            </div>
+            <div>
+                <strong>Languages:</strong> Portuguese (Native), English (Advanced)
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
