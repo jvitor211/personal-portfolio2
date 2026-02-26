@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Rondon | Offensive Security Engineer</title>
+
+    <!-- SEO & Open Graph Tags -->
+    <meta name="description"
+        content="Portfolio de João Rondon, Offensive Security Engineer e Full Stack Developer especializado em arquiteturas resilientes e operações Red Team.">
+    <meta property="og:title" content="João Rondon | Offensive Security Engineer">
+    <meta property="og:description"
+        content="Full Stack Developer corporativo e Pesquisador de Segurança Ofensiva (C2, OSINT, Malware Dev).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joaorondon.com/"> <!-- Atualize com seu domínio -->
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop">
+    <!-- Imagem de capa placeholder estilo Matrix -->
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@400;600;800&family=Heebo:wght@400;700&display=swap"
@@ -66,7 +80,13 @@
                     <span data-lang-content="en" class="hidden">Secure Contact</span>
                     <span data-lang-content="es" class="hidden">Contacto Seguro</span>
                     <span data-lang-content="he" class="hidden">צור קשר</span>
-                </a>
+                    <a href="https://www.linkedin.com/in/joão-rondon-3453001b1" target="_blank"
+                        class="btn btn-transparent" title="LinkedIn Profile">
+                        <i data-lucide="linkedin"></i> <span data-lang-content="pt">LinkedIn</span>
+                        <span data-lang-content="en" class="hidden">LinkedIn</span>
+                        <span data-lang-content="es" class="hidden">LinkedIn</span>
+                        <span data-lang-content="he" class="hidden">לינקדאין</span>
+                    </a>
             </div>
         </div>
     </header>
@@ -103,14 +123,45 @@
                         (C2) ומודיעין (OSINT).</p>
                 </div>
 
-                <div class="skills-grid">
-                    <div class="skill-tag">.NET Core</div>
-                    <div class="skill-tag">React</div>
-                    <div class="skill-tag">Android Security</div>
-                    <div class="skill-tag">Malware Dev</div>
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">Azure</div>
-                    <div class="skill-tag">AI Engineering</div>
+                <div class="skills-category-group">
+                    <h5 data-lang-content="pt">Desenvolvimento</h5>
+                    <h5 data-lang-content="en" class="hidden">Development</h5>
+                    <h5 data-lang-content="es" class="hidden">Desarrollo</h5>
+                    <h5 data-lang-content="he" class="hidden">פיתוח</h5>
+                    <div class="skills-grid">
+                        <div class="skill-tag">.NET Core</div>
+                        <div class="skill-tag">React</div>
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">C/C++</div>
+                        <div class="skill-tag">JavaScript</div>
+                    </div>
+                </div>
+
+                <div class="skills-category-group">
+                    <h5 data-lang-content="pt">Segurança</h5>
+                    <h5 data-lang-content="en" class="hidden">Security</h5>
+                    <h5 data-lang-content="es" class="hidden">Seguridad</h5>
+                    <h5 data-lang-content="he" class="hidden">אבטחה</h5>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Malware Dev</div>
+                        <div class="skill-tag">Reverse Engineering</div>
+                        <div class="skill-tag">C2 Design</div>
+                        <div class="skill-tag">OSINT</div>
+                        <div class="skill-tag">Android Security</div>
+                    </div>
+                </div>
+
+                <div class="skills-category-group">
+                    <h5 data-lang-content="pt">Cloud & Ops</h5>
+                    <h5 data-lang-content="en" class="hidden">Cloud & Ops</h5>
+                    <h5 data-lang-content="es" class="hidden">Cloud y Ops</h5>
+                    <h5 data-lang-content="he" class="hidden">ענן ותפעול</h5>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Azure</div>
+                        <div class="skill-tag">Docker</div>
+                        <div class="skill-tag">CI/CD Pipelines</div>
+                        <div class="skill-tag">AI Engineering</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -144,6 +195,12 @@
                         <li><i data-lucide="check"></i> Stealth Communication</li>
                         <li><i data-lucide="check"></i> Real-time Surveillance</li>
                     </ul>
+                    <div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <a href="https://github.com/jvitor211" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 15px; font-size: 0.85rem; width: 100%; justify-content: center;">
+                            <i data-lucide="github"></i> View Intel
+                        </a>
+                    </div>
                 </article>
 
                 <!-- MossIT -->
@@ -160,6 +217,12 @@
                         activos digitales e investigaciones complejas.</p>
                     <p class="project-desc hidden" data-lang-content="he" dir="rtl">חבילת מודיעין ו-OSINT למעקב אחר
                         נכסים דיגיטליים וקורלציה של נתונים בחקירות מורכבות.</p>
+                    <div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <a href="https://github.com/jvitor211" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 15px; font-size: 0.85rem; width: 100%; justify-content: center;">
+                            <i data-lucide="github"></i> Repository
+                        </a>
+                    </div>
                 </article>
 
                 <!-- Ghost Bridge -->
@@ -176,6 +239,12 @@
                         diseñado para la exfiltración de datos.</p>
                     <p class="project-desc hidden" data-lang-content="he" dir="rtl">ערוץ תקשורת מאובטח מוצפן המיועד
                         להוצאת נתונים בסביבות מנוטרות עוינות.</p>
+                    <div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <a href="https://github.com/jvitor211" target="_blank" class="btn btn-outline"
+                            style="padding: 8px 15px; font-size: 0.85rem; width: 100%; justify-content: center;">
+                            <i data-lucide="lock"></i> Access Demo
+                        </a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -194,42 +263,84 @@
                         <h4>AMAGGI</h4>
                         <h5>Full Stack Developer</h5>
                         <div data-lang-content="pt">
-                            <p>Desenvolvimento de soluções críticas em .NET e React. Arquitetura de microsserviços em
-                                Azure.</p>
+                            <p>Arquiteto de soluções corporativas utilizando <strong>.NET Core</strong> e
+                                <strong>React</strong>.
+                            </p>
+                            <ul>
+                                <li>Desenho de APIs robustas e microsserviços em <strong>Azure</strong>, garantindo alta
+                                    disponibilidade.</li>
+                                <li>Fomento de fluxos de trabalho de Desenvolvimento Assistido por IA para aumentar a
+                                    velocidade da equipe.</li>
+                            </ul>
                         </div>
                         <div data-lang-content="en" class="hidden">
-                            <p>Critical solution development in .NET and React. Microservices architecture on Azure.</p>
+                            <p>Architecting enterprise-grade solutions using <strong>.NET Core</strong> and
+                                <strong>React</strong>.
+                            </p>
+                            <ul>
+                                <li>Designing robust APIs and microservices on <strong>Azure</strong>, ensuring high
+                                    availability.</li>
+                                <li>Championing AI-Assisted Development workflows to increase team velocity.</li>
+                            </ul>
                         </div>
                         <div data-lang-content="es" class="hidden">
-                            <p>Desarrollo de soluciones críticas en .NET y React. Arquitectura de microservicios en
-                                Azure.</p>
+                            <p>Desarrollo de soluciones empresariales utilizando <strong>.NET Core</strong> y
+                                <strong>React</strong>.
+                            </p>
+                            <ul>
+                                <li>Diseño de APIs robustas y microservicios en <strong>Azure</strong>, asegurando alta
+                                    disponibilidad.</li>
+                                <li>Fomento de flujos de trabajo de Desarrollo Asistido por IA.</li>
+                            </ul>
                         </div>
                         <div data-lang-content="he" class="hidden" dir="rtl">
-                            <p>פיתוח פתרונות קריטיים ב-.NET ו-React. ארכיטקטורת Microservices ב-Azure.</p>
+                            <p>בניית פתרונות ברמת ארגון באמצעות <strong>.NET Core</strong> ו-<strong>React</strong>.</p>
+                            <ul>
+                                <li>עיצוב ממשקי API חסונים ומיקרו-שירותים ב-<strong>Azure</strong>, תוך הבטחת זמינות
+                                    גבוהה.</li>
+                                <li>קידום תהליכי פיתוח בעזרת בינה מלאכותית.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">2023 - 2023</div>
+                    <div class="timeline-date">Apr 2023 - Oct 2023</div>
                     <div class="timeline-content">
                         <h4>LANLINK</h4>
                         <h5>Técnico de Suporte N2 / L2 Support</h5>
                         <div data-lang-content="pt">
-                            <p>Gestão de incidentes globais e manutenção de infraestrutura crítica.</p>
+                            <p>Suporte Nível 2 para infraestrutura global em 80 filiais.</p>
+                            <ul>
+                                <li>Manutenção de ambientes SAP/Citrix e execução de troubleshooting crítico de
+                                    hardware.</li>
+                            </ul>
                         </div>
                         <div data-lang-content="en" class="hidden">
-                            <p>Global incident management and critical infrastructure maintenance.</p>
+                            <p>Provided Tier-2 support for global infrastructure across 80 branches.</p>
+                            <ul>
+                                <li>Maintained SAP/Citrix environments and executed critical hardware troubleshooting.
+                                </li>
+                            </ul>
                         </div>
                         <div data-lang-content="es" class="hidden">
-                            <p>Gestión de incidentes globales y mantenimiento de infraestructura crítica.</p>
+                            <p>Soporte Nivel 2 para infraestructura global en 80 sucursales.</p>
+                            <ul>
+                                <li>Mantenimiento de entornos SAP/Citrix y resolución de problemas críticos de hardware.
+                                </li>
+                            </ul>
                         </div>
                         <div data-lang-content="he" class="hidden" dir="rtl">
-                            <p>ניהול תקריות גלובלי ותחזוקת תשתית קריטית.</p>
+                            <p>מתן תמיכה ברמה 2 לתשתית גלובלית ב-80 סניפים.</p>
+                            <ul>
+                                <li>תחזוקת סביבות SAP/Citrix וביצוע פתרון בעיות חומרה קריטיות.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
     </main>
 
