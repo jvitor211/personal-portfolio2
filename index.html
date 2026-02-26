@@ -27,7 +27,9 @@
 </head>
 
 <body data-lang="pt">
+    <!-- Backgrounds -->
     <canvas id="matrix-canvas"></canvas>
+    <div class="crt-overlay"></div>
     <div class="scanline"></div>
 
     <!-- Language Switcher -->
@@ -94,7 +96,7 @@
     <main class="container">
 
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="about" class="section reveal">
             <div class="section-header">
                 <i data-lucide="shield" class="icon-lg"></i>
                 <h3>0x01_PROFILE</h3>
@@ -167,7 +169,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section">
+        <section id="projects" class="section reveal">
             <div class="section-header">
                 <i data-lucide="cpu" class="icon-lg"></i>
                 <h3>0x02_ARSENAL</h3>
@@ -250,7 +252,7 @@
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="section">
+        <section id="experience" class="section reveal">
             <div class="section-header">
                 <i data-lucide="briefcase" class="icon-lg"></i>
                 <h3>0x03_MISSIONS</h3>
@@ -411,7 +413,7 @@
             canvas.height = window.innerHeight;
         });
 
-        // Language Switcher
+        // Language Switcher & Typewriter logic
         function setLang(lang) {
             document.body.setAttribute('data-lang', lang);
 
@@ -432,7 +434,56 @@
                     btn.classList.remove('active');
                 }
             });
+
+            // Trigger Typewriter for the visible hero-sub
+            typeWriterEffect();
         }
+
+        // Typewriter Effect
+        function typeWriterEffect() {
+            const activeSub = document.querySelector(`.hero-sub:not(.hidden)`);
+            if (activeSub) {
+                const text = activeSub.getAttribute('data-original-text') || activeSub.innerHTML;
+                if (!activeSub.getAttribute('data-original-text')) {
+                    activeSub.setAttribute('data-original-text', text); // Store original text
+                }
+
+                activeSub.innerHTML = '';
+                let i = 0;
+                activeSub.style.width = 'auto'; // Reset width for typing
+
+                function typeWriter() {
+                    if (i < text.length) {
+                        activeSub.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 30); // Typing speed
+                    }
+                }
+                typeWriter();
+            }
+        }
+
+        // Scroll Reveal Effect
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100; // Trigger point
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+        // Initialize effects on load
+        window.onload = () => {
+            typeWriterEffect();
+            reveal();
+        };
+
     </script>
 </body>
 
